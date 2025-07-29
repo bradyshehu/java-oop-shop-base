@@ -20,14 +20,14 @@ public class Prodotto {
         this.iva = iva;
     };
 
-    public float ottieniPrezzo() {
-        return Math.round(prezzo*100)/100f;
+    public float getPrezzo() {
+        return prezzo;
     }
-    public float ottieniPrezzoFinale() {
+    public float getPrezzoFinale() {
         float prezzoFinale = prezzo + (prezzo * iva / 100);
-        return Math.round(prezzoFinale*100)/100f;
+        return prezzoFinale;
     }
-    public String ottieniNomeCompleto () {
+    public String getNomeCompleto () {
         String nomeCompleto = codice + "-" + nome;
         return nomeCompleto;
     }

@@ -8,9 +8,9 @@ public class Main {
         Prodotto telefono = new Prodotto("Iphone", "Ultima generazione", 100.00f, 22);
 
         System.out.println(telefono.nome);
-        System.out.printf("%.2f\n",telefono.ottieniPrezzo());
-        System.out.printf("%.2f\n",telefono.ottieniPrezzoFinale());
-        System.out.println(telefono.ottieniNomeCompleto());
+        System.out.printf("%.2f\n",telefono.getPrezzo());
+        System.out.printf("%.2f\n",telefono.getPrezzoFinale());
+        System.out.println(telefono.getNomeCompleto());
     }
     
 }
